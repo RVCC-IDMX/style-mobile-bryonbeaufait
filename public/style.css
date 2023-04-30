@@ -34,7 +34,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
@@ -79,6 +78,10 @@ svg {
   width: 1em;
 }
 
+:is(h1, h2, h3) {
+  line-height: 1.2;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -89,8 +92,25 @@ nav ul {
   margin: 0;
 }
 
-:is(h1, h2, h3) {
-  line-height: 1.2;
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 0.5rem;
+  translate: 0 -100%;
+  transition: translate 150ms ease-in-out;
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+
+:where(ul, ol) {
+  list-style-position: inside;
 }
 
 /* main */

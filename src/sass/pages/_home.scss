@@ -16,16 +16,7 @@ svg {
     width: 1em;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    min-height: 10vh;
-    align-items: center;
-    margin: 0;
-}
-
 :is(h1, h2, h3) {
     line-height: 1.2;
 }
+

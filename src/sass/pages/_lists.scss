@@ -1,0 +1,5 @@
+@use "../abstracts/index";
+
+:where(ul, ol) {
+    list-style-position: inside;
+}
